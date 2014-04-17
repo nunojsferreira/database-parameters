@@ -9,7 +9,7 @@ Instalation
 You can install this bundle using composer
 
 `````
-composer "scytale/database-parameters": "1.0.*@dev"
+composer "scytale/database-parameters": "1.0.*"
 ````
 
 Add to AppKernel
