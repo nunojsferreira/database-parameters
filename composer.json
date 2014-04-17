@@ -16,5 +16,10 @@
     "autoload": {
         "psr-0": { "Scytale\\DatabaseConfigurationBundle": "" }
     },
-    "target-dir": "Scytale/DatabaseConfigurationBundle"
+    "target-dir": "Scytale/DatabaseConfigurationBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
 }
