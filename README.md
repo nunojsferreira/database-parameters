@@ -42,7 +42,11 @@ This bundles creates a service `scy_db_parameters`
   ``````
   $container->get('scy_db_parameters')->delete('parameter_key');
   ``````
-  
+
+License
+-------
+
+This bundle is released under the MIT license.
 
 
 
