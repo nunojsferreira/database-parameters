@@ -18,6 +18,7 @@ Add to AppKernel
 new Scytale\DatabaseConfigurationBundle\ScytaleDatabaseConfigurationBundle(),
 ``````
 
+Don't forget to update schema.
 And you are done!
 
 Usage
