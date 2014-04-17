@@ -1,0 +1,13 @@
+parameters:
+    scytale_database_configuration.parameter.class: Scytale\DatabaseConfigurationBundle\Entity\Parameter
+    scytale_database_configuration.parameter.manager.class: Scytale\DatabaseConfigurationBundle\Manager\ParameterManager
+    scytale_database_configuration.parameter.service.class: Scytale\DatabaseConfigurationBundle\DependencyInjection\ParameterService
+
+services:
+    scytale_database_configuration.parameter.manager:
+        class: %scytale_database_configuration.parameter.manager.class%
+        arguments: [@doctrine.orm.entity_manager, %scytale_database_configuration.parameter.class%, @validator]
+
+    scy_db_parameters:
+        class: %scytale_database_configuration.parameter.service.class%
+        arguments: [@scytale_database_configuration.parameter.manager]

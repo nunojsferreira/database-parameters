@@ -1,0 +1,6 @@
+Scytale\DatabaseConfigurationBundle\Entity\Parameter:
+    properties:
+        name:
+            - NotBlank: ~
+        value:
+            - NotBlank: ~
