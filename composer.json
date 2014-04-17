@@ -1,7 +1,20 @@
 {
     "name": "scytale/database-parameters",
     "description": "This Symfony Bundle allows to store parameters in database",
+    "keywords": ["parameters", "configuration", "symfony"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Scytale",
+            "homepage": "http://scytale.pt"
+        }
+    ],
     "require": {
         "php": ">=5.3.3"
-    }
+    },
+    "autoload": {
+        "psr-0": { "Scytale\\DatabaseConfigurationBundle": "" }
+    },
+    "target-dir": "Scytale/DatabaseConfigurationBundle"
 }
