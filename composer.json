@@ -1,0 +1,7 @@
+{
+    "name": "scytale/database-parameters",
+    "description": "This Symfony Bundle allows to store parameters in database",
+    "require": {
+        "php": ">=5.3.3"
+    }
+}
