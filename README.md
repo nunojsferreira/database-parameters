@@ -1,7 +1,7 @@
 ScytaleDatabaseParametersBundle
 ===============================
 
-This Symfony bundle allows to store parameters in database. This particularly usefull if you want to enable parameter management (e.g. web admin email address, VAT taxes, ...)
+This Symfony bundle allows to store parameters in database. This is particularly usefull if you want to enable parameter management (e.g. web admin email address, VAT taxes, ...)
 
 Instalation
 -----------
@@ -18,29 +18,30 @@ Add to AppKernel
 new Scytale\DatabaseConfigurationBundle\ScytaleDatabaseConfigurationBundle(),
 ``````
 
+Don't forget to update schema.
 And you are done!
 
 Usage
 -----
 
-This bundles creates a service `scy_db_parameters`
+This bundles creates a service `scy_parameters`
 
 1. Set a parameter
 
   ``````
-  $container->get('scy_db_parameters')->set('parameter_key', 'parameter_value');
+  $container->get('scy_parameters')->set('parameter_key', 'parameter_value');
   ``````
   
 2. Fetch a parameter
   
   ``````
-  $parameterValue = $container->get('scy_db_parameters')->get('parameter_key');
+  $parameterValue = $container->get('scy_parameters')->get('parameter_key');
   ``````
 
 3. Delete a parameter
 
   ``````
-  $container->get('scy_db_parameters')->delete('parameter_key');
+  $container->get('scy_parameters')->delete('parameter_key');
   ``````
 
 License
