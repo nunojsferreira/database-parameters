@@ -1,7 +1,7 @@
 ScytaleDatabaseParametersBundle
 ===============================
 
-This Symfony bundle allows to store parameters in database. This particularly usefull if you want to enable parameter management (e.g. web admin email address, VAT taxes, ...)
+This Symfony bundle allows to store parameters in database. This is particularly usefull if you want to enable parameter management (e.g. web admin email address, VAT taxes, ...)
 
 Instalation
 -----------
@@ -18,6 +18,7 @@ Add to AppKernel
 new Scytale\DatabaseConfigurationBundle\ScytaleDatabaseConfigurationBundle(),
 ``````
 
+Don't forget to update schema.
 And you are done!
 
 Usage
