@@ -8,6 +8,6 @@ services:
         class: %scytale_database_configuration.parameter.manager.class%
         arguments: [@doctrine.orm.entity_manager, %scytale_database_configuration.parameter.class%, @validator]
 
-    scy_db_parameters:
+    scy_parameters:
         class: %scytale_database_configuration.parameter.service.class%
         arguments: [@scytale_database_configuration.parameter.manager]
